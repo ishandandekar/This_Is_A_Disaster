@@ -43,7 +43,7 @@ def plot_loss_curves(history):
 # Function to evaluate: accuracy, precision, recall, f1-score
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
-def calculate_results(y_true, y_pred):
+def get_metrics(y_true, y_pred):
     """
     Calculates model accuracy, precision, recall and f1 score of a binary classification model.
 
