@@ -62,3 +62,28 @@ def get_metrics(y_true, y_pred):
                     "recall": model_recall,
                     "f1": model_f1}
     return model_results
+
+# Generate a metrics report (plots confusion matrix optionally)
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+
+def gen_metrics_report(y_true,y_pred,plot_confusion_matrix=True):
+    """Generates a metrics report,
+       should be used with classification problem.
+
+    Args:
+        y_true (ArrayLike): An array of truth labels
+        y_pred (ArrayLike): An array of predictions, should be of same shape as y_true
+        plot_confusion_matrix (bool, optional): Plots confusion matrix as a heatmap. Defaults to True.
+    """
+
+    print(f"Accuracy: {accuracy_score(y_true, y_pred) * 100}")
+    model_precision, model_recall, model_f1, _ = precision_recall_fscore_support(y_true, y_pred, average="weighted")
+    print(f"Precision: {model_precision}")
+    print(f"Recall: {model_recall}")
+    print(f"F1-score: {model_f1}")
+
+    if plot_confusion_matrix:
+        conf_mat = confusion_matrix(y_true,y_pred)
+        sns.heatmap(conf_mat, annot=True,cmap="Blues")
+        plt.title("Confusion matrix heatmap")
