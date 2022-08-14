@@ -20,6 +20,7 @@
 
 - [ ] Update documentation
 - [ ] Finish notebook (preferably get a better model from it)
+- [ ] Make **Open in colab** button to open notebook
 - [ ] Make actual submission on the compition
 - [ ] Get best model (as a folder prefereably)
 - [ ] Get the dbourke's experiments as an image for README
