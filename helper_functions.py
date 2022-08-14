@@ -2,14 +2,14 @@
 # (since we're going to be downloading and unzipping a few files)
 import zipfile
 
-def unzip_data(filename):
+def unzip_data(filename,data_dir="data"):
     """
     Unzips filename into the current working directory.
     Args:
         filename (str): a filepath to a target zip folder to be unzipped.
     """
     zip_ref = zipfile.ZipFile(filename, "r")
-    zip_ref.extractall()
+    zip_ref.extractall(data_dir)
     zip_ref.close()
 
 # Plot the validation and training data separately
