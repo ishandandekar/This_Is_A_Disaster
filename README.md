@@ -19,12 +19,7 @@
 #### TODO:
 
 - [ ] Update documentation
-- [ ] Finish notebook (preferably get a better model from it)
+- [ ] Finish notebook (get the model from it)
 - [ ] Make **Open in colab** button to open notebook
-- [ ] Make actual submission on the compition
-- [ ] Get best model (as a folder prefereably)
-- [ ] Get the dbourke's experiments as an image for README
 - [ ] Get the metrics plots
 - [ ] Get some examples (tweets for the web app)
-- [ ] Give the option to change models
-- [ ] Make info for best model
