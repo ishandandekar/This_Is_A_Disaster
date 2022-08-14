@@ -22,7 +22,6 @@
 - [ ] Get best model (as a folder prefereably)
 - [ ] Get the metrics dataframe
 - [ ] Get the metrics plots
-- [ ] Get some examples (abstracts for the web app)
+- [ ] Get some examples (tweets for the web app)
 - [ ] Give the option to change models
-- [ ] Make info for different models
-- [ ] Make the notebook
+- [ ] Make info for best model
