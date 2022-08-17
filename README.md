@@ -6,6 +6,8 @@
 
 ## Introduction
 
+In this project, I try to classify tweets which are related to a natural disaster or not. I make an attempt on the **`nlp-getting-started`** competition available on Kaggle. Check the competition [here](https://www.kaggle.com/competitions/nlp-getting-started/overview). In this competition, we have to classify whether these tweets are about a natural disaster. I use neural networks, create models and try to improve on them using various layers and methods.
+
 ## Data
 
 ## Models
@@ -21,7 +23,7 @@
 #### TODO:
 
 - [ ] Update documentation
-- [ ] Finish notebook (get the model from it)
-- [ ] Make **Open in colab** button to open notebook
-- [ ] Get the metrics plots
-- [ ] Get some examples (tweets for the web app)
+- [x] Finish notebook
+- [x] Make **Open in colab** button to open notebook
+- [ ] Get model
+- [ ] Get some examples (tweets from tests set for the web app)
