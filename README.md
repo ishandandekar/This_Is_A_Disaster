@@ -2,11 +2,11 @@
 
 # This_Is_A_Disaster
 
-:wave: Hello and welcome to **This_Is_A_Disaster**. This is my first natural-language-processing project. Also, make sure to visit the official website of this project.
+:wave: Hello and welcome to **This_Is_A_Disaster**. This is my first natural-language-processing project and also my first attempt to a formal machine-learning competition!
 
 ## Introduction
 
-In this project, I try to classify tweets which are related to a natural disaster or not. I make an attempt on the **`nlp-getting-started`** competition available on Kaggle. Check the competition [here](https://www.kaggle.com/competitions/nlp-getting-started/overview). In this competition, we have to classify whether these tweets are about a natural disaster. I use neural networks, create models and try to improve on them using various layers and methods.
+In this project, I try to classify tweets which are related to a natural disaster or not. I make an attempt on the **`nlp-getting-started`** competition available on Kaggle. Check the competition [here](https://www.kaggle.com/competitions/nlp-getting-started/overview). The objective of the competition was to classify whether a tweet is related to a natural disaster or not. The target is set as `1` if the tweet is related to a disaster and `0` otherwise.
 
 ## Data
 
@@ -14,23 +14,38 @@ The dataset was given by the competition organisers (Kaggle) themselves. The dat
 
 ## Models
 
-I made three models using Tensorflow library. Instead of making a `TextVectozier` and `Embedding` layer, I used a pretrained **[USE](https://tfhub.dev/google/universal-sentence-encoder/4)** to convert text-to-vectors. All of these models were compiled using binary cross-entropy loss and Adam optimizer.
+I made three models using Tensorflow library. Instead of making a `TextVectozier` and `Embedding` layer, I used a pretrained **[USE](https://tfhub.dev/google/universal-sentence-encoder/4)** to convert text-to-vectors. All of these models were compiled using binary cross-entropy loss, which is best suited for binary classification problems, and Adam optimizer.
 
-- Model 0: For the first experiment, I used the **USE** as a layer to convert text-to-vectors. I set the trainable parameter as False, so that the weightsin the pretraine module don't change. I added a dense layer with 64 neurons with ReLU activation function, to add more trainable parameters. As an output layer, I added a Dense layer with 1 neuron with sigmoid activation function to finally classify the tensors. After evaluating the model on validation set, it gave an accuracy of 82%.
-- Model 1: For the next iteration, I used the same architecture, but added a Dropout layer to regularize the neural network. I also added another Dense layer with 64 neurons using ReLU activation.
-
-## App
+- **Model 0**: For the first experiment, I used the **USE** as a layer to convert text-to-vectors. I set the trainable parameter as False, so that the weightsin the pretraine module don't change. I added a dense layer with 64 neurons with ReLU activation function, to add more trainable parameters. As an output layer, I added a Dense layer with 1 neuron with sigmoid activation function to finally classify the tensors. After evaluating the model on validation set, it gave an accuracy of 82%.
+- **Model 1**: For the next iteration, I used the same architecture, but added a Dropout layer to regularize the neural network. I also added another Dense layer with 64 neurons using ReLU activation.
+- **Model 2**: As a last try I wanted to train a model on the whole training set (before validation split). Due to this, I could not evaluate the model on the valdiation set (data leakage issue). I could not add callbacks during training stage (callbacks depend on the loss and accuracy on the validation set). Although, this is alarming but I wanted to know how will it perform on the test set.
 
 ## Future development
 
+This was my first attempt to a NLP competition. A web app with the best performing model would be great. I would also like to add a web scraper such that, if you add the tweets's URL the scraper would extract the text. This is to make the web app more automated. I would also like to do more modelling experiments to get better score in the competitions.
+
 ## Tools and libraries
 
+- Python
+- Keras
+- Kaggle
+- Tensorflow
+- Pandas
+- Git and Github
+
 ## Contents of the repository
+
+- _.gitignore_ : To get the data into Colab notebook I used Kaggle API. The API needs keys which were obtained via Kaggle itself. As this is a private key I omitted to upload the `.json` file using `.gitignore` file.
+- _helper_functions.py_ : This python script contains various functions which were required during the modelling experiments.
+- _README.md_ : This is a markdown file which is used to document the project. This is displayed on the repository page on Github.
+- _This_Is_A_Disaster_nbk.ipynb_ : This is the jupyter/ Colab notebook used for the competition. The notebook has been modified to make it more beautiful and readable.
+
+## Contributions
+
+I appreciate feedback on potential improvements and/or if you see an error that I've made! Also if you would like to contribute then do a pull request with the notebook and helper functions! and help in the future development :smile:
 
 #### TODO:
 
 - [ ] Update documentation
-- [x] Finish notebook
-- [x] Make **Open in colab** button to open notebook
-- [ ] Get model
-- [ ] Get some examples (tweets from tests set for the web app)
+- [ ] Finish notebook
+- [ ] Make **Open in colab** button to open notebook
