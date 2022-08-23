@@ -2,7 +2,7 @@
 
 # This_Is_A_Disaster
 
-:wave: Hello and welcome to **This_Is_A_Disaster**. This is my first natural-language-processing project and also my first attempt to a formal machine-learning competition!
+:wave: Hello and welcome to **This_Is_A_Disaster**. This is my first natural-language-processing project and also my first attempt to a formal machine-learning competition! My personal best was rank 229 :smile:.
 
 ## Introduction
 
@@ -19,6 +19,8 @@ I made three models using Tensorflow library. Instead of making a `TextVectozier
 - **Model 0**: For the first experiment, I used the **USE** as a layer to convert text-to-vectors. I set the trainable parameter as False, so that the weightsin the pretraine module don't change. I added a dense layer with 64 neurons with ReLU activation function, to add more trainable parameters. As an output layer, I added a Dense layer with 1 neuron with sigmoid activation function to finally classify the tensors. After evaluating the model on validation set, it gave an accuracy of 82%.
 - **Model 1**: For the next iteration, I used the same architecture, but added a Dropout layer to regularize the neural network. I also added another Dense layer with 64 neurons using ReLU activation.
 - **Model 2**: As a last try I wanted to train a model on the whole training set (before validation split). Due to this, I could not evaluate the model on the valdiation set (data leakage issue). I could not add callbacks during training stage (callbacks depend on the loss and accuracy on the validation set). Although, this is alarming but I wanted to know how will it perform on the test set.
+
+> Check the notebook to see how these models performed the test data.
 
 ## Future development
 
@@ -44,6 +46,8 @@ This was my first attempt to a NLP competition. A web app with the best performi
 ## Contributions
 
 I appreciate feedback on potential improvements and/or if you see an error that I've made! If you would like to contribute on improveing the code or even the documentation then do a pull request with the notebook and helper functions! and help in the future development :smile: If you have any doubts regarding the code, make sure to add an 'Issue' in the issues tab of the repository and I'll get to it as soon as I can.
+
+A special thanks to [Daniel Bourke](https://www.mrdbourke.com/) for this project.
 
 #### TODO:
 
