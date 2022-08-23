@@ -48,9 +48,3 @@ This was my first attempt to a NLP competition. A web app with the best performi
 I appreciate feedback on potential improvements and/or if you see an error that I've made! If you would like to contribute on improveing the code or even the documentation then do a pull request with the notebook and helper functions! and help in the future development :smile: If you have any doubts regarding the code, make sure to add an 'Issue' in the issues tab of the repository and I'll get to it as soon as I can.
 
 A special thanks to [Daniel Bourke](https://www.mrdbourke.com/) for this project.
-
-#### TODO:
-
-- [x] Update documentation
-- [ ] Finish notebook
-- [x] Make **Open in colab** button to open notebook
