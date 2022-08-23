@@ -39,13 +39,14 @@ This was my first attempt to a NLP competition. A web app with the best performi
 - _helper_functions.py_ : This python script contains various functions which were required during the modelling experiments.
 - _README.md_ : This is a markdown file which is used to document the project. This is displayed on the repository page on Github.
 - _This_Is_A_Disaster_nbk.ipynb_ : This is the jupyter/ Colab notebook used for the competition. The notebook has been modified to make it more beautiful and readable.
+  > :warning:**Note** : The last run of this notebook is dated 23 August '22. The evaluation of these models have been done by the results which were present on this date only.
 
 ## Contributions
 
-I appreciate feedback on potential improvements and/or if you see an error that I've made! Also if you would like to contribute then do a pull request with the notebook and helper functions! and help in the future development :smile:
+I appreciate feedback on potential improvements and/or if you see an error that I've made! If you would like to contribute on improveing the code or even the documentation then do a pull request with the notebook and helper functions! and help in the future development :smile: If you have any doubts regarding the code, make sure to add an 'Issue' in the issues tab of the repository and I'll get to it as soon as I can.
 
 #### TODO:
 
-- [ ] Update documentation
+- [x] Update documentation
 - [ ] Finish notebook
-- [ ] Make **Open in colab** button to open notebook
+- [x] Make **Open in colab** button to open notebook
