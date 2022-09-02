@@ -2,6 +2,10 @@
 
 # This_Is_A_Disaster
 
+<p align="center">
+    <img width=300 src="assets/meme.jpeg">
+</p>
+
 :wave: Hello and welcome to **This_Is_A_Disaster**. This is my first natural-language-processing project and also my first attempt to a formal machine-learning competition! My personal best was rank 229 :smile:.
 
 ## Introduction
@@ -37,6 +41,16 @@ This was my first attempt to a NLP competition. A web app with the best performi
 
 ## Contents of the repository
 
+```
+This_Is_A_Disaster/
+├─ assets/
+├─ .gitignore
+├─ README.md
+├─ This_Is_A_Disaster_nbk.ipynb
+├─ helper_functions.py
+```
+
+- _assets_ : Contains various media materials required for certain purposes.
 - _.gitignore_ : To get the data into Colab notebook I used Kaggle API. The API needs keys which were obtained via Kaggle itself. As this is a private key I omitted to upload the `.json` file using `.gitignore` file.
 - _helper_functions.py_ : This python script contains various functions which were required during the modelling experiments.
 - _README.md_ : This is a markdown file which is used to document the project. This is displayed on the repository page on Github.
